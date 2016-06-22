@@ -16,7 +16,7 @@ csv.encoding
 values: 
 Java character encoding - eg: UTF-8, ISO-8859-1  
 
-csv.urlsource
+csv.sourceurl
 set this to the URL of where to fetch the CSV document
 
 csv.header
