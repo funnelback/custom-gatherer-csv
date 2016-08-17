@@ -62,6 +62,11 @@ def i=0;
 for (record in csv.iterator()) {
     if ((i % 100) == 0)
     {
+    	// Check to see if the update has been stopped 
+        if (config.isUpdateStopped()) {
+                store.close()
+                throw new RuntimeException("Update stop requested by user.");
+        }    	
         config.setProgressMessage("Processed "+i+" records");
     }
     def fields = record.toMap();
