@@ -1,5 +1,7 @@
 Custom gatherer for use with a custom collection for download of csv/tsv files.
 
+Add URLs for CSV to fetch to collection.cfg.start.urls file.  Format is 1 URL per line.  Each URL is fetched and the CSV is processed using the set of options defined.  Note: only 1 set of csv options is supported so the same settings will be applied to all the CSV files downloaded.
+
 Supports the following collection.cfg settings:
 
 Collection.cfg options:
@@ -15,9 +17,6 @@ mysql
 csv.encoding
 values: 
 Java character encoding - eg: UTF-8  (default), ISO-8859-1  
-
-csv.sourceurl
-set this to the URL of where to fetch the CSV document
 
 csv.header
 values: true (CSV has a header line) (default) / false (CSV does not have a header line)
