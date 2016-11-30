@@ -6,7 +6,9 @@ Add URLs for CSV to fetch to collection.cfg.start.urls file.  Format is 1 URL pe
 
 Note: you need to set the following collection.cfg option otherwise cache copies will not work:
 
+```
 store.record.type=XmlRecord
+```
 
 Supports the following collection.cfg settings:
 
