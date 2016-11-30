@@ -4,6 +4,10 @@ Custom gatherer for use with a custom collection for download of csv/tsv files.
 
 Add URLs for CSV to fetch to collection.cfg.start.urls file.  Format is 1 URL per line.  Each URL is fetched and the CSV is processed using the set of options defined.  Note: only 1 set of csv options is supported so the same settings will be applied to all the CSV files downloaded.
 
+Note: you need to set the following collection.cfg option otherwise cache copies will not work:
+
+store.record.type=XmlRecord
+
 Supports the following collection.cfg settings:
 
 ## Collection.cfg options
