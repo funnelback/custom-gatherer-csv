@@ -2,11 +2,15 @@
 
 Custom gatherer for use with a custom collection for download of csv/tsv files.
 
-Add URLs for CSV to fetch to collection.cfg.start.urls file.  Format is 1 URL per line.  Each URL is fetched and the CSV is processed using the set of options defined.  Note: only 1 set of csv options is supported so the same settings will be applied to all the CSV files downloaded.
+Add URLs for CSV to fetch using the data.sources collection.cfg option.  Each URL is fetched and the CSV is processed using the set of options defined.  Note: only 1 set of csv options is supported so the same settings will be applied to all the CSV files downloaded.
 
 Supports the following collection.cfg settings:
 
 ## Collection.cfg options
+
+### data.sources
+
+Contains a comma-separated list of CSV URLs to index. Must be specified as URLs.  Local files should be specified using the file:// URL notation.
 
 ### csv.format 
 
