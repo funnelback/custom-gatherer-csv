@@ -1,8 +1,13 @@
 /**
+ * CSV custom-gather.groovy
+ * 
+ * This custom gatherer can be used to download and index content from CSV files.  It is designed to be used with a Funnelback custom collection type.
  * Converts a CSV file to XML, each row being stored as a separate record
  *
  * The XML tag names will be taken from the CSV column headers, or custom
  * headers defined in collection.cfg
+ *
+ * See: https://github.com/funnelback/custom-gatherer-csv for more detailed information
  */
 import com.funnelback.common.*;
 import com.funnelback.common.config.*;
